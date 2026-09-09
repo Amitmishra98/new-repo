@@ -2,9 +2,9 @@
 
 **The most advanced free online developer toolbox — 13 pro-grade tools, zero dependencies, 100% in your browser.**
 
-🌐 **Live app: <https://amitmishra98.github.io/new-repo/>**
+🌐 **Live app: <https://gost-co.github.io/new-repo/>**
 
-[![CI](https://github.com/Amitmishra98/new-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/Amitmishra98/new-repo/actions/workflows/ci.yml)
+[![CI](https://github.com/Gost-co/new-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/Gost-co/new-repo/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f5b52e.svg)](LICENSE)
 
 DevForge packs the utilities you reach for a dozen times a day — formatting JSON,
@@ -22,19 +22,19 @@ lightning-fast page that runs entirely client-side.
 
 | Tool | What it does | Try it |
 | --- | --- | --- |
-| **JSON Formatter** | Format, minify, validate and sort JSON with error positions | [#/json](https://amitmishra98.github.io/new-repo/#/json) |
-| **JWT Decoder** | Inspect header, payload, expiry and claims | [#/jwt](https://amitmishra98.github.io/new-repo/#/jwt) |
-| **Regex Tester** | Live match highlighting and capture-group tables | [#/regex](https://amitmishra98.github.io/new-repo/#/regex) |
-| **Cron Explainer** | Plain-English cron descriptions + next 5 run times | [#/cron](https://amitmishra98.github.io/new-repo/#/cron) |
-| **Base64** | Encode/decode text (unicode-safe, URL-safe alphabet) | [#/base64](https://amitmishra98.github.io/new-repo/#/base64) |
-| **Hash Generator** | SHA-1/256/384/512 digests via WebCrypto | [#/hash](https://amitmishra98.github.io/new-repo/#/hash) |
-| **Timestamp Converter** | unix ⇄ ISO 8601 ⇄ local ⇄ relative, live clock | [#/timestamp](https://amitmishra98.github.io/new-repo/#/timestamp) |
-| **URL Encode & Inspect** | Percent encode/decode + full URL breakdown | [#/url](https://amitmishra98.github.io/new-repo/#/url) |
-| **Color Converter** | hex/rgb/hsl conversion, shade ramps, WCAG contrast | [#/color](https://amitmishra98.github.io/new-repo/#/color) |
-| **UUID Generator** | Cryptographically random UUIDv4, in bulk | [#/uuid](https://amitmishra98.github.io/new-repo/#/uuid) |
-| **Case Converter** | camelCase ⇄ snake_case ⇄ kebab-case ⇄ CONSTANT_CASE ⇄ … | [#/case](https://amitmishra98.github.io/new-repo/#/case) |
-| **Diff Checker** | Line-by-line diff of any two texts | [#/diff](https://amitmishra98.github.io/new-repo/#/diff) |
-| **Lorem Ipsum** | Placeholder paragraphs, sentences or words | [#/lorem](https://amitmishra98.github.io/new-repo/#/lorem) |
+| **JSON Formatter** | Format, minify, validate and sort JSON with error positions | [#/json](https://gost-co.github.io/new-repo/#/json) |
+| **JWT Decoder** | Inspect header, payload, expiry and claims | [#/jwt](https://gost-co.github.io/new-repo/#/jwt) |
+| **Regex Tester** | Live match highlighting and capture-group tables | [#/regex](https://gost-co.github.io/new-repo/#/regex) |
+| **Cron Explainer** | Plain-English cron descriptions + next 5 run times | [#/cron](https://gost-co.github.io/new-repo/#/cron) |
+| **Base64** | Encode/decode text (unicode-safe, URL-safe alphabet) | [#/base64](https://gost-co.github.io/new-repo/#/base64) |
+| **Hash Generator** | SHA-1/256/384/512 digests via WebCrypto | [#/hash](https://gost-co.github.io/new-repo/#/hash) |
+| **Timestamp Converter** | unix ⇄ ISO 8601 ⇄ local ⇄ relative, live clock | [#/timestamp](https://gost-co.github.io/new-repo/#/timestamp) |
+| **URL Encode & Inspect** | Percent encode/decode + full URL breakdown | [#/url](https://gost-co.github.io/new-repo/#/url) |
+| **Color Converter** | hex/rgb/hsl conversion, shade ramps, WCAG contrast | [#/color](https://gost-co.github.io/new-repo/#/color) |
+| **UUID Generator** | Cryptographically random UUIDv4, in bulk | [#/uuid](https://gost-co.github.io/new-repo/#/uuid) |
+| **Case Converter** | camelCase ⇄ snake_case ⇄ kebab-case ⇄ CONSTANT_CASE ⇄ … | [#/case](https://gost-co.github.io/new-repo/#/case) |
+| **Diff Checker** | Line-by-line diff of any two texts | [#/diff](https://gost-co.github.io/new-repo/#/diff) |
+| **Lorem Ipsum** | Placeholder paragraphs, sentences or words | [#/lorem](https://gost-co.github.io/new-repo/#/lorem) |
 
 ## Quick start
 
@@ -79,7 +79,7 @@ answer engines to understand:
   ~100 on Core Web Vitals by construction
 
 Tip: after your first deploy, submit
-<https://amitmishra98.github.io/new-repo/> to
+<https://gost-co.github.io/new-repo/> to
 [Google Search Console](https://search.google.com/search-console) to speed up
 indexing.
 

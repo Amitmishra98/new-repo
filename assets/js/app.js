@@ -516,7 +516,7 @@
     route();
 
     // Offline support (skipped when opened straight from the file system).
-    if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
+    if (typeof navigator !== "undefined" && "serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("sw.js").catch(() => { /* offline mode unavailable — fine */ });
       });

@@ -162,6 +162,12 @@ global.removeEventListener = (t, fn) => { winBus[t] = (winBus[t] || []).filter((
 global.dispatchEvent = dispatchWin;
 global.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListener() {} });
 
+/* navigator exists as a global from Node 21 onwards; shim it for older runtimes
+ * so app boot behaves identically everywhere (no serviceWorker → SW skipped). */
+if (typeof global.navigator === "undefined") {
+  Object.defineProperty(global, "navigator", { configurable: true, value: { onLine: true } });
+}
+
 const _store = {};
 try {
   Object.defineProperty(global, "localStorage", {

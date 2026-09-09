@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Static validation for Toolbelt — checks that every tool is wired up correctly.
+/* Static validation for DevForge — checks that every tool is wired up correctly.
  * Run: node scripts/validate.js   (exits non-zero on failure)
  */
 "use strict";
@@ -56,6 +56,11 @@ for (const f of ["index.html", "manifest.webmanifest", "sw.js", "favicon.svg", "
 }
 for (const f of ["assets/icons/icon-192.png", "assets/icons/icon-512.png"]) {
   must(fs.existsSync(path.join(root, f)), "missing icon: " + f + " (run node scripts/gen-icons.js)");
+}
+
+/* ---- SEO / crawler files exist ---- */
+for (const f of ["robots.txt", "sitemap.xml", "llms.txt", "assets/img/og-image.png"]) {
+  must(fs.existsSync(path.join(root, f)), "missing SEO file: " + f);
 }
 
 if (failures) {

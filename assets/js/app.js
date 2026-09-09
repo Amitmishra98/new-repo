@@ -1,4 +1,4 @@
-/* Toolbelt — app shell: tool registry, hash router, command palette, theme, shared helpers.
+/* DevForge — app shell: tool registry, hash router, command palette, theme, shared helpers.
  * Zero dependencies, zero build step. Each tool lives in assets/js/tools/<id>.js
  * and registers itself with DevKit.register({ id, name, category, description, keywords, icon, render }).
  */
@@ -169,10 +169,10 @@
   let booted = false;
 
   function register(tool) {
-    if (!tool || typeof tool !== "object") { console.warn("[toolbelt] register: expected an object"); return; }
-    if (!tool.id || !/^[a-z0-9-]+$/.test(tool.id)) { console.warn("[toolbelt] register: invalid id", tool.id); return; }
-    if (typeof tool.render !== "function") { console.warn("[toolbelt] register: missing render()", tool.id); return; }
-    if (tools.some((t) => t.id === tool.id)) { console.warn("[toolbelt] register: duplicate id", tool.id); return; }
+    if (!tool || typeof tool !== "object") { console.warn("[devforge] register: expected an object"); return; }
+    if (!tool.id || !/^[a-z0-9-]+$/.test(tool.id)) { console.warn("[devforge] register: invalid id", tool.id); return; }
+    if (typeof tool.render !== "function") { console.warn("[devforge] register: missing render()", tool.id); return; }
+    if (tools.some((t) => t.id === tool.id)) { console.warn("[devforge] register: duplicate id", tool.id); return; }
     tool.category = tool.category || "Other";
     tool.keywords = tool.keywords || [];
     tool.icon = tool.icon || "zap";
@@ -201,7 +201,7 @@
   /* ------------------------------------------------------------------ *
    * State + elements                                                    *
    * ------------------------------------------------------------------ */
-  const LS_THEME = "toolbelt.theme";
+  const LS_THEME = "devforge.theme";
   let contentEl = null, navGroupsEl = null, filterEl = null, themeBtn = null;
   let paletteEl = null, paletteInputEl = null, paletteListEl = null;
   let paletteOpen = false, paletteActive = 0, paletteMatches = [];
@@ -293,10 +293,10 @@
     contentEl.replaceChildren(el("div", { class: "home" },
       el("section", { class: "hero" },
         el("div", { class: "hero-mark", html: '<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#f59e0b"/><path d="M18 19 36 32 18 45" stroke="#1c1917" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M28 50h18" stroke="#1c1917" stroke-width="7" stroke-linecap="round"/></svg>' }),
-        el("h1", { text: "Toolbelt" }),
+        el("h1", { text: "DevForge" }),
         el("p", {
           class: "hero-tag",
-          text: "A pocket Swiss-Army knife for developers. Every tool runs locally in your browser — no server, no build step, no dependencies."
+          text: "The most advanced pocket toolkit for developers. Every tool runs locally in your browser — no server, no build step, no dependencies, no data collection."
         }),
         el("div", { class: "chips" },
           el("span", { class: "chip", text: tools.length + " tools" }),
@@ -348,7 +348,7 @@
       if (ret && typeof ret.destroy === "function") tool._cleanup = ret;
     } catch (e) {
       body.appendChild(el("div", { class: "panel panel-err", text: "This tool failed to render: " + (e && e.message ? e.message : e) }));
-      console.error("[toolbelt] render failed for " + tool.id, e);
+      console.error("[devforge] render failed for " + tool.id, e);
     }
     if (typeof contentEl.scrollTo === "function") contentEl.scrollTo(0, 0);
   }
@@ -366,7 +366,7 @@
     else renderHome();
 
     updateActiveNav(tool ? tool.id : null);
-    document.title = tool ? tool.name + " — Toolbelt" : "Toolbelt — a zero-dependency developer toolbox";
+    document.title = tool ? tool.name + " — DevForge" : "DevForge — Advanced Online Developer Tools: JSON, JWT, Regex & More";
     closeMobileSidebar();
   }
 

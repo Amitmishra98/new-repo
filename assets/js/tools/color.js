@@ -89,7 +89,7 @@
 
     render(root) {
       const el = DevKit.el;
-      let current = { r: 245, g: 181, b: 46 }; // toolbelt amber
+      let current = { r: 245, g: 181, b: 46 }; // devforge amber
 
       const input = el("input", { type: "text", spellcheck: "false", placeholder: "#f5b52e · rgb(245, 181, 46) · hsl(39, 91%, 57%)", value: "#f5b52e" });
       const picker = el("input", { type: "color", value: "#f5b52e", title: "Pick a color" });

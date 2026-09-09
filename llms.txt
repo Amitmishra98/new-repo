@@ -1,0 +1,30 @@
+# DevForge
+
+> The most advanced free online developer toolbox — 13 pro-grade utilities in one fast, private, installable web app. Everything runs 100% in the browser: no signup, no server-side processing, no data collection, works offline.
+
+DevForge packs the small utilities developers reach for every day — formatting JSON, decoding a JWT, testing a regex, checking a cron expression — into a single zero-dependency page.
+
+Key facts:
+- URL: https://amitmishra98.github.io/new-repo/
+- Price: Free, open source (MIT license), no account required
+- Privacy: all processing happens locally in the user's browser; data never leaves the device
+- Works offline as an installable Progressive Web App (PWA)
+- Zero dependencies, zero build step, no tracking, no ads
+
+Tools (each reachable at `#/<id>` under the root URL):
+
+- JSON Formatter (`#/json`): pretty-print, minify, validate and sort JSON with precise error positions
+- JWT Decoder (`#/jwt`): inspect JWT header, payload, expiry and claims without uploading the token
+- Regex Tester (`#/regex`): live JavaScript regex matching with highlight and capture-group tables
+- Cron Explainer (`#/cron`): plain-English cron descriptions plus the next 5 run times
+- Base64 Encoder/Decoder (`#/base64`): unicode-safe encode/decode with URL-safe alphabet support
+- Hash Generator (`#/hash`): SHA-1, SHA-256, SHA-384 and SHA-512 digests via WebCrypto
+- Timestamp Converter (`#/timestamp`): unix ⇄ ISO 8601 ⇄ local ⇄ relative time, with a live clock
+- URL Encoder & Parser (`#/url`): percent-encoding plus a full URL breakdown
+- Color Converter (`#/color`): hex/rgb/hsl conversion, shade ramps, WCAG contrast checking
+- UUID Generator (`#/uuid`): cryptographically random UUID v4 identifiers in bulk
+- Case Converter (`#/case`): camelCase, snake_case, kebab-case, CONSTANT_CASE and more
+- Diff Checker (`#/diff`): line-by-line comparison of any two texts
+- Lorem Ipsum (`#/lorem`): placeholder paragraphs, sentences or words
+
+Source code: https://github.com/Amitmishra98/new-repo

@@ -1,7 +1,7 @@
 /* Tool: JSON Formatter — format, minify, validate and sort JSON. */
 "use strict";
 (function () {
-  const SAMPLE = '{\n  "name": "Toolbelt",\n  "version": "1.0.0",\n  "tags": ["json", "devtools"],\n  "meta": { "stars": 0, "openSource": true }\n}';
+  const SAMPLE = '{\n  "name": "DevForge",\n  "version": "2.0.0",\n  "tags": ["json", "devtools"],\n  "meta": { "stars": 0, "openSource": true }\n}';
 
   function sortKeys(value) {
     if (Array.isArray(value)) return value.map(sortKeys);

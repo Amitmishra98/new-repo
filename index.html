@@ -3,18 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Toolbelt — a zero-dependency developer toolbox</title>
-  <meta name="description" content="A pocket Swiss-Army knife for developers. JSON, Base64, JWT, regex, cron, colors, timestamps, diff and more — 100% client-side, no build step, no dependencies.">
+  <title>DevForge — Advanced Online Developer Tools: JSON, JWT, Regex &amp; More</title>
+  <meta name="description" content="13 advanced developer tools in one private, offline-ready web app: JSON formatter, JWT decoder, regex tester, cron explainer, Base64 &amp; more. Free, no signup.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="application-name" content="DevForge">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://amitmishra98.github.io/new-repo/">
+
+  <!-- Open Graph — social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DevForge">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="DevForge — Advanced Online Developer Tools">
+  <meta property="og:description" content="13 pro-grade tools — JSON formatter, JWT decoder, regex tester, cron explainer, Base64, hashes &amp; more — that run 100% in your browser. Free, private, offline.">
+  <meta property="og:url" content="https://amitmishra98.github.io/new-repo/">
+  <meta property="og:image" content="https://amitmishra98.github.io/new-repo/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DevForge — the most advanced free online developer toolbox">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevForge — Advanced Online Developer Tools">
+  <meta name="twitter:description" content="13 pro-grade tools that run 100% in your browser — JSON, JWT, regex, cron, Base64, hashes &amp; more. Free, private, offline.">
+  <meta name="twitter:image" content="https://amitmishra98.github.io/new-repo/assets/img/og-image.png">
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data for search engines and AI answer engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://amitmishra98.github.io/new-repo/#website",
+        "url": "https://amitmishra98.github.io/new-repo/",
+        "name": "DevForge",
+        "description": "The most advanced free online developer toolbox — 13 pro-grade tools that run 100% in your browser.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://amitmishra98.github.io/new-repo/#author" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://amitmishra98.github.io/new-repo/#author",
+        "name": "Amit Mishra",
+        "url": "https://github.com/Amitmishra98"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://amitmishra98.github.io/new-repo/#webapp",
+        "name": "DevForge — Advanced Developer Tools",
+        "url": "https://amitmishra98.github.io/new-repo/",
+        "description": "The most advanced free online developer toolbox: format JSON, decode JWTs, test regex, explain cron, encode Base64, generate hashes, convert timestamps and more — 13 tools that run 100% in your browser. No signup, no uploads, works offline.",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Utilities",
+        "operatingSystem": "Any (web browser)",
+        "browserRequirements": "Requires JavaScript",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "JSON formatter, validator and sorter",
+          "Base64 encoder and decoder (unicode-safe)",
+          "JWT decoder with expiry and claims inspection",
+          "Regex tester with live match highlighting",
+          "Cron expression explainer with next run times",
+          "Hash generator (SHA-1, SHA-256, SHA-384, SHA-512)",
+          "Unix timestamp converter (ISO 8601, local, relative)",
+          "URL percent-encoder and parser",
+          "Color converter (hex, rgb, hsl) with WCAG contrast",
+          "UUID v4 generator",
+          "Case converter (camelCase, snake_case, kebab-case)",
+          "Diff checker",
+          "Lorem ipsum generator"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@id": "https://amitmishra98.github.io/new-repo/#author" },
+        "image": "https://amitmishra98.github.io/new-repo/assets/img/og-image.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://amitmishra98.github.io/new-repo/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is DevForge free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DevForge is 100% free and open source under the MIT license — no ads, no tracking and no account required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Completely. Every tool runs locally in your browser with JavaScript; your JSON, tokens and text are never uploaded anywhere, and the app works fully offline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which developer tools are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "13 tools: a JSON formatter and validator, Base64 encoder/decoder, JWT decoder, regex tester, cron expression explainer, hash generator (SHA-1/256/384/512), timestamp converter, URL encoder and parser, color converter, UUID generator, case converter, diff checker and lorem ipsum generator."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does DevForge work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DevForge is an installable Progressive Web App — a service worker caches the whole app shell so every tool keeps working without an internet connection."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <h1 class="sr-only">DevForge — the most advanced free online developer toolbox: 13 tools that run 100% in your browser</h1>
   <noscript>
     <div style="padding: 24px; font-family: system-ui, sans-serif;">
-      Toolbelt needs JavaScript to run — every tool runs locally in your browser.
+      DevForge needs JavaScript to run — every tool runs locally in your browser.
+      It is a free, private, offline-capable developer toolbox: JSON formatter,
+      JWT decoder, regex tester, cron explainer, Base64, hashes and more.
     </div>
   </noscript>
 
@@ -22,13 +140,13 @@
     <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" title="Open menu">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
     </button>
-    <a class="brand" href="#/" aria-label="Toolbelt — home">
+    <a class="brand" href="#/" aria-label="DevForge — home">
       <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
         <rect width="64" height="64" rx="14" fill="#f59e0b"/>
         <path d="M18 19 36 32 18 45" stroke="#1c1917" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         <path d="M28 50h18" stroke="#1c1917" stroke-width="7" stroke-linecap="round"/>
       </svg>
-      <span class="brand-name">Tool<b>belt</b></span>
+      <span class="brand-name">Dev<b>Forge</b></span>
     </a>
     <button class="palette-trigger" id="palette-trigger" aria-label="Search tools">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
@@ -59,6 +177,62 @@
     </aside>
     <main class="content" id="content" tabindex="-1"></main>
   </div>
+
+  <!-- Static, crawlable content — everything below is plain HTML so search
+       engines and AI answer engines can index every tool without running JS. -->
+  <footer class="site-foot">
+    <div class="site-foot-inner">
+      <section class="foot-about">
+        <h2>The most advanced developer toolbox that runs in your browser</h2>
+        <p><strong>DevForge</strong> packs 13 pro-grade developer tools — a JSON formatter and
+        validator, JWT decoder, regex tester, cron expression explainer, Base64 encoder/decoder,
+        hash generator and more — into one lightning-fast web app. There is nothing to install and
+        nothing to sign up for: every tool runs 100% client-side, so your data never leaves your
+        device. Install DevForge as a PWA and it keeps working offline.</p>
+      </section>
+      <div class="foot-grid">
+        <section>
+          <h2>All 13 developer tools</h2>
+          <ul class="foot-tools">
+            <li><a href="#/json">JSON Formatter &amp; Validator</a><span>Pretty-print, minify, sort and validate JSON online with exact error positions.</span></li>
+            <li><a href="#/jwt">JWT Decoder</a><span>Decode JSON Web Tokens to inspect header, payload, expiry and claims — locally, never on a server.</span></li>
+            <li><a href="#/regex">Regex Tester</a><span>Test JavaScript regular expressions online with live match highlighting and capture-group tables.</span></li>
+            <li><a href="#/cron">Cron Expression Explainer</a><span>Translate any crontab schedule into plain English and preview the next five run times.</span></li>
+            <li><a href="#/base64">Base64 Encoder / Decoder</a><span>Encode and decode Base64 online — unicode-safe, with URL-safe alphabet support.</span></li>
+            <li><a href="#/hash">Hash Generator</a><span>Generate SHA-1, SHA-256, SHA-384 and SHA-512 checksums locally with WebCrypto.</span></li>
+            <li><a href="#/timestamp">Timestamp Converter</a><span>Convert unix timestamps to ISO 8601, UTC, local and relative time, with a live clock.</span></li>
+            <li><a href="#/url">URL Encoder &amp; Parser</a><span>Percent-encode or decode text and break any URL into scheme, host, path, query and hash.</span></li>
+            <li><a href="#/color">Color Converter</a><span>Convert hex, rgb and hsl colors, build shade ramps and check WCAG contrast ratios.</span></li>
+            <li><a href="#/uuid">UUID Generator</a><span>Generate cryptographically random UUID v4 identifiers in bulk.</span></li>
+            <li><a href="#/case">Case Converter</a><span>Convert identifiers between camelCase, snake_case, kebab-case, CONSTANT_CASE and more.</span></li>
+            <li><a href="#/diff">Diff Checker</a><span>Compare two texts line by line and see additions, deletions and context.</span></li>
+            <li><a href="#/lorem">Lorem Ipsum Generator</a><span>Generate placeholder paragraphs, sentences or words of classic lorem ipsum text.</span></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Why DevForge?</h2>
+          <ul class="foot-points">
+            <li><strong>Private by design.</strong> All processing happens locally in your browser — nothing is ever uploaded to a server.</li>
+            <li><strong>Zero dependencies, zero build.</strong> No frameworks, no npm packages, no CDN scripts — the page loads instantly.</li>
+            <li><strong>Works offline.</strong> Install DevForge as a Progressive Web App and use every tool without an internet connection.</li>
+            <li><strong>Free and open source.</strong> MIT-licensed, no ads, no tracking, no account required.</li>
+          </ul>
+          <h2>Frequently asked questions</h2>
+          <dl class="foot-faq">
+            <dt>Is DevForge free to use?</dt>
+            <dd>Yes. DevForge is 100% free and open source under the MIT license — no ads, no tracking and no account required.</dd>
+            <dt>Is my data private?</dt>
+            <dd>Completely. Every tool runs locally in your browser with JavaScript; your JSON, tokens and text are never uploaded anywhere, and the app works fully offline.</dd>
+            <dt>Which developer tools are included?</dt>
+            <dd>13 tools: a JSON formatter and validator, Base64 encoder/decoder, JWT decoder, regex tester, cron expression explainer, hash generator (SHA-1/256/384/512), timestamp converter, URL encoder and parser, color converter, UUID generator, case converter, diff checker and lorem ipsum generator.</dd>
+            <dt>Does DevForge work offline?</dt>
+            <dd>Yes. DevForge is an installable Progressive Web App — a service worker caches the whole app shell so every tool keeps working without an internet connection.</dd>
+          </dl>
+        </section>
+      </div>
+      <p class="foot-meta">DevForge — advanced online developer tools · <a href="https://github.com/Amitmishra98/new-repo">Source on GitHub</a> · MIT License</p>
+    </div>
+  </footer>
 
   <div class="palette-backdrop" id="palette" hidden>
     <div class="palette" role="dialog" aria-modal="true" aria-label="Search tools">

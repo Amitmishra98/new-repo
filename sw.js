@@ -1,7 +1,7 @@
-/* Toolbelt service worker — cache-first offline support for the whole app shell. */
+/* DevForge service worker — cache-first offline support for the whole app shell. */
 "use strict";
 
-const CACHE = "toolbelt-v1";
+const CACHE = "devforge-v2";
 
 const CORE = [
   "./",

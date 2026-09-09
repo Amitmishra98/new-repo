@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Smoke test for Toolbelt — loads app.js + every tool inside a tiny fake DOM and
+/* Smoke test for DevForge — loads app.js + every tool inside a tiny fake DOM and
  * exercises rendering, input events and button clicks. Zero dependencies.
  * Run: node scripts/smoke-test.js   (exits non-zero on any error)
  */
@@ -228,7 +228,7 @@ function collect(node, pred, out) {
 
 /* Seeds are applied to INPUT/TEXTAREA/SELECT elements in DOM order. */
 const SEEDS = {
-  base64: ["Hello, Toolbelt! 🛠 — unicode test", ""],
+  base64: ["Hello, DevForge! ⚒ — unicode test", ""],
   case: ["hello world_test-foo BarBaz 42things"],
   color: ["#3b82f6", "#3b82f6"],
   cron: ["*/15 9-17 * * mon-fri"],
@@ -281,7 +281,7 @@ const ASSERT = {
     const v = readonlyTextareas(root).find((t) => /^[A-Za-z0-9+/\-_=\s]+$/.test(t) && t.length > 8);
     if (!v) return null;
     const round = Buffer.from(v, "base64").toString("utf8");
-    return round === "Hello, Toolbelt! 🛠 — unicode test" ? null : "base64 round-trip mismatch: " + round;
+    return round === "Hello, DevForge! ⚒ — unicode test" ? null : "base64 round-trip mismatch: " + round;
   },
   case(root) {
     const v = rowValue(root, "snake_case");

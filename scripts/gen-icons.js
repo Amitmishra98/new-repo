@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Generates the Toolbelt PNG icons (192px, 512px) with zero dependencies:
+/* Generates the DevForge PNG icons (192px, 512px) with zero dependencies:
  * a hand-rolled PNG encoder + signed-distance-field rasterizer drawing the ">_" logo.
  * Run: node scripts/gen-icons.js
  */

@@ -1,6 +1,6 @@
-# Contributing to Toolbelt
+# Contributing to DevForge
 
-Thanks for helping build Toolbelt! This project has a strict but simple
+Thanks for helping build DevForge! This project has a strict but simple
 philosophy, and following it keeps the project tiny, fast and easy to maintain.
 
 ## The philosophy

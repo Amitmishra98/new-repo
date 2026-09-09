@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Toolbelt — single stylesheet, zero dependencies.
+   DevForge — single stylesheet, zero dependencies.
    Theme tokens first, then layout, then components.
    ========================================================================== */
 
@@ -729,4 +729,54 @@ mark.hl {
   .content { padding: 20px 16px 56px; }
   .hero h1 { font-size: 27px; }
   .out-label { width: 84px; }
+}
+
+/* ---------- screen-reader-only helper (keeps a static <h1> for crawlers) ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- static site footer (crawlable content for search & AI engines) ---------- */
+.site-foot {
+  border-top: 1px solid var(--border-soft);
+  background: var(--panel-2);
+  padding: 44px 24px 32px;
+}
+.site-foot-inner { max-width: 1020px; margin: 0 auto; }
+.site-foot h2 { margin: 0 0 10px; font-size: 16.5px; letter-spacing: -0.2px; }
+.site-foot p { margin: 0 0 10px; max-width: 76ch; color: var(--text-muted); font-size: 14px; }
+.site-foot p strong { color: var(--text); }
+.foot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px 44px;
+  margin-top: 30px;
+}
+.foot-tools { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
+.foot-tools a { display: block; color: var(--text); font-weight: 600; font-size: 13.5px; }
+.foot-tools a:hover { color: var(--accent-strong); }
+.foot-tools span { display: block; margin-top: 1px; font-weight: 400; color: var(--text-muted); font-size: 13px; }
+.foot-points { list-style: none; margin: 0 0 6px; padding: 0; display: grid; gap: 10px; }
+.foot-points li { color: var(--text-muted); font-size: 13.5px; }
+.foot-points strong { color: var(--text); }
+.foot-faq dt { margin-top: 14px; font-weight: 600; font-size: 13.5px; }
+.foot-faq dt:first-child { margin-top: 0; }
+.foot-faq dd { margin: 3px 0 0; color: var(--text-muted); font-size: 13px; }
+.foot-meta {
+  margin: 34px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+@media (max-width: 900px) {
+  .site-foot { padding: 34px 16px 26px; }
 }

@@ -5,7 +5,7 @@
 DevForge packs the small utilities developers reach for every day — formatting JSON, decoding a JWT, testing a regex, checking a cron expression — into a single zero-dependency page.
 
 Key facts:
-- URL: https://amitmishra98.github.io/new-repo/
+- URL: https://gost-co.github.io/new-repo/
 - Price: Free, open source (MIT license), no account required
 - Privacy: all processing happens locally in the user's browser; data never leaves the device
 - Works offline as an installable Progressive Web App (PWA)
@@ -27,4 +27,4 @@ Tools (each reachable at `#/<id>` under the root URL):
 - Diff Checker (`#/diff`): line-by-line comparison of any two texts
 - Lorem Ipsum (`#/lorem`): placeholder paragraphs, sentences or words
 
-Source code: https://github.com/Amitmishra98/new-repo
+Source code: https://github.com/Gost-co/new-repo

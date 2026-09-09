@@ -35,4 +35,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://amitmishra98.github.io/new-repo/sitemap.xml
+Sitemap: https://gost-co.github.io/new-repo/sitemap.xml

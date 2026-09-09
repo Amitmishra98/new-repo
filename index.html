@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toolbelt — a zero-dependency developer toolbox</title>
+  <meta name="description" content="A pocket Swiss-Army knife for developers. JSON, Base64, JWT, regex, cron, colors, timestamps, diff and more — 100% client-side, no build step, no dependencies.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <noscript>
+    <div style="padding: 24px; font-family: system-ui, sans-serif;">
+      Toolbelt needs JavaScript to run — every tool runs locally in your browser.
+    </div>
+  </noscript>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" title="Open menu">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+    </button>
+    <a class="brand" href="#/" aria-label="Toolbelt — home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#f59e0b"/>
+        <path d="M18 19 36 32 18 45" stroke="#1c1917" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M28 50h18" stroke="#1c1917" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Tool<b>belt</b></span>
+    </a>
+    <button class="palette-trigger" id="palette-trigger" aria-label="Search tools">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+      <span class="palette-trigger-label">Search tools…</span>
+      <kbd>Ctrl K</kbd>
+    </button>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme"></button>
+      <a class="icon-btn" href="https://github.com/Amitmishra98/new-repo" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub" title="View source on GitHub">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+    <aside class="sidebar" id="sidebar" aria-label="Tools by category">
+      <div class="sidebar-search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <input id="filter" type="search" placeholder="Filter tools…" aria-label="Filter tools" autocomplete="off">
+      </div>
+      <nav class="nav-groups" id="nav-groups" aria-label="Tool list"></nav>
+      <footer class="sidebar-foot">
+        <span id="sidebar-count" class="mono">0 tools</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>0 dependencies</span>
+      </footer>
+    </aside>
+    <main class="content" id="content" tabindex="-1"></main>
+  </div>
+
+  <div class="palette-backdrop" id="palette" hidden>
+    <div class="palette" role="dialog" aria-modal="true" aria-label="Search tools">
+      <div class="palette-head">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <input id="palette-input" type="text" placeholder="Search tools…" autocomplete="off" aria-label="Search tools">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="palette-list" id="palette-list" role="listbox"></ul>
+      <div class="palette-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>↵</kbd> open</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/tools/base64.js"></script>
+  <script src="assets/js/tools/case.js"></script>
+  <script src="assets/js/tools/color.js"></script>
+  <script src="assets/js/tools/cron.js"></script>
+  <script src="assets/js/tools/diff.js"></script>
+  <script src="assets/js/tools/hash.js"></script>
+  <script src="assets/js/tools/json.js"></script>
+  <script src="assets/js/tools/jwt.js"></script>
+  <script src="assets/js/tools/lorem.js"></script>
+  <script src="assets/js/tools/regex.js"></script>
+  <script src="assets/js/tools/timestamp.js"></script>
+  <script src="assets/js/tools/url.js"></script>
+  <script src="assets/js/tools/uuid.js"></script>
+</body>
+</html>
